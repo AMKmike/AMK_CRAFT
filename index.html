@@ -82,3 +82,46 @@ main();
 </head>
 <body style="margin:0px;width:100vw;height:100vh;" id="game_frame"></body>
 </html>
+
+<script>
+window.addEventListener("load", () => {
+  // Wait a bit for the main menu to initialize
+  setTimeout(() => {
+    // Try to find the title on canvas or add an overlay div
+    // Option 1: Add a title overlay div on top of the canvas
+    const titleDiv = document.createElement("div");
+    titleDiv.textContent = "AMKCRAFT";
+    titleDiv.style.position = "fixed";
+    titleDiv.style.top = "20px";
+    titleDiv.style.left = "50%";
+    titleDiv.style.transform = "translateX(-50%)";
+    titleDiv.style.fontSize = "48px";
+    titleDiv.style.fontWeight = "bold";
+    titleDiv.style.color = "white";
+    titleDiv.style.textShadow = "2px 2px 5px black";
+    titleDiv.style.pointerEvents = "none";
+    titleDiv.style.zIndex = "9999";
+    document.body.appendChild(titleDiv);
+  }, 1000);
+});
+</script>
+
+<script>
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const titleDiv = document.createElement("div");
+    titleDiv.textContent = "AMKCRAFT";
+    titleDiv.style.position = "fixed";
+    titleDiv.style.top = "20px";
+    titleDiv.style.left = "50%";
+    titleDiv.style.transform = "translateX(-50%)";
+    titleDiv.style.fontSize = "48px";
+    titleDiv.style.fontWeight = "bold";
+    titleDiv.style.color = "white";
+    titleDiv.style.textShadow = "2px 2px 5px black";
+    titleDiv.style.pointerEvents = "none";
+    titleDiv.style.zIndex = "9999";
+    document.body.appendChild(titleDiv);
+  }, 1000);
+});
+</script>
